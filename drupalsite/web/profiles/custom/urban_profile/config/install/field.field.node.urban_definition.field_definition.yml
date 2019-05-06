@@ -1,0 +1,21 @@
+uuid: 096610c2-74a5-4bda-960c-d6bc9b1a81a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_definition
+    - node.type.urban_definition
+_core:
+  default_config_hash: J47oChOgJcSKJ3veAO6aMtdrzRe2qYx0HFPW19werOY
+id: node.urban_definition.field_definition
+field_name: field_definition
+entity_type: node
+bundle: urban_definition
+label: Definition
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

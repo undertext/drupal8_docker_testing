@@ -1,0 +1,6 @@
+urban_module.ajax_definition:
+  path: '/urban/definition/{node}'
+  defaults:
+    _controller: '\Drupal\urban_module\Controller\UrbanDefinitionAjaxController::ajaxDefinitionHtml'
+  requirements:
+    _permission: 'access content'

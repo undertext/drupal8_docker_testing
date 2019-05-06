@@ -1,0 +1,20 @@
+uuid: 66debc4b-c8ab-4d5b-9c52-4acc3ab8a2fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - urban_module
+  theme:
+    - bartik
+id: urbandefinitionlist
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: urban_definition_list_block
+settings:
+  id: urban_definition_list_block
+  label: 'Urban definition list'
+  provider: urban_module
+  label_display: visible
+visibility: {  }

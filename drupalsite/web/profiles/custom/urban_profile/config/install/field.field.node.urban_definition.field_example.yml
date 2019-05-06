@@ -1,0 +1,21 @@
+uuid: ba46fb8f-4320-46b2-a333-4b20ea9ac294
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_example
+    - node.type.urban_definition
+_core:
+  default_config_hash: 2gtncr5JybVOZN8uVWZZTgUaBqe_vz4FZ-biA09po5M
+id: node.urban_definition.field_example
+field_name: field_example
+entity_type: node
+bundle: urban_definition
+label: Example
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

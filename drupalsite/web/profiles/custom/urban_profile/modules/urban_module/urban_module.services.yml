@@ -1,0 +1,4 @@
+services:
+  urban_module.service:
+    class: '\Drupal\urban_module\Service\UrbanDictionaryService'
+    arguments: ['@http_client', '@logger.factory']

@@ -1,0 +1,24 @@
+uuid: 3e59ccf1-77d7-4804-bc28-5f5870dd5690
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.field.block_content.basic.body
+  module:
+    - text
+_core:
+  default_config_hash: p6hMFhqtPe37dyRrMvTfvSC8LDbsdIEFKrSXx-Fr1wk
+id: block_content.basic.default
+targetEntityType: block_content
+bundle: basic
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

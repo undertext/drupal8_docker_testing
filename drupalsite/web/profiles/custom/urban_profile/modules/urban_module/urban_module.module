@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Hooks implemented by the urban_module module.
+ */
+
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function urban_module_node_presave(NodeInterface $node) {
+  if ($node->bundle() == 'urban_definition') {
+    /** @var \Drupal\urban_module\Service\UrbanDictionaryService $ubService */
+    $ubService = \Drupal::service('urban_module.service');
+    $definition = $ubService->getDefinition($node->getTitle());
+    if (!empty($definition)) {
+      $node->title->value = $definition->getTerm();
+      $node->field_definition->value = $definition->getDefinition();
+      $node->field_example->value = $definition->getExample();
+    }
+  }
+}

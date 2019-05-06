@@ -1,0 +1,12 @@
+uuid: db14052b-8d4c-4f71-8176-40fb6743e74a
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: fuEus-4Dfk7ovFlranj16zQ943SOYHxCdGSaVs7JcoE
+id: node.search_index
+label: 'Search index'
+targetEntityType: node
+cache: true

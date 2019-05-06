@@ -1,0 +1,26 @@
+uuid: 68d1761d-3817-4c4f-9675-64517a7fec65
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.urban_definition.field_definition
+    - field.field.node.urban_definition.field_example
+    - node.type.urban_definition
+  module:
+    - user
+_core:
+  default_config_hash: OABXuo4d437KFfiSIHjBQ_-EO5EgU2pBnBS36Bh_8v8
+id: node.urban_definition.teaser
+targetEntityType: node
+bundle: urban_definition
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_definition: true
+  field_example: true

@@ -1,0 +1,22 @@
+uuid: a40635af-f842-421c-a52a-f9ef274120f5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bartik
+_core:
+  default_config_hash: 6GhQ2k9THnIY97Atq0M1Y3jkdiVoUbEDqyptYATIaL8
+id: bartik_local_tasks
+theme: bartik
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 58862007-0367-4247-968f-6689c2c96afe
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: VP6RyGqjTJOpp5GnQyH8PLiIy4QGCW8qswiMSDV-wOE
+name: 'Urban definition'
+type: urban_definition
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,37 @@
+uuid: 71ca37a8-9ec0-4623-880f-910d1a046e9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.urban_definition.field_definition
+    - field.field.node.urban_definition.field_example
+    - node.type.urban_definition
+  module:
+    - user
+_core:
+  default_config_hash: 1w_tJITwmq_9dX1Ua_FFHnSG-0nOFxmbvGDq1qhkOp8
+id: node.urban_definition.default
+targetEntityType: node
+bundle: urban_definition
+mode: default
+content:
+  field_definition:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_example:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

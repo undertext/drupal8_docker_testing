@@ -1,0 +1,14 @@
+uuid: 2579331c-08be-4c02-b8df-552df213708a
+name: 'Site name'
+mail: undertext.2010@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: ITBZx5EP3-uSE1ml71JmQt8MaYIpxKgvz73uKlnWX0g
