@@ -31,3 +31,10 @@ services:
       - ./:/var/www/html
     ports:
       - "80:80"
+  chrome_browser:
+    container_name: "drupal_testing_chrome_browser"
+    image: selenium/standalone-chrome
+    ports:
+      - "4444:4444"
+    volumes:
+      - ./:/var/www/html

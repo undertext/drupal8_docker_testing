@@ -26,8 +26,9 @@ class UrbanDefinitionListBlockTest extends BrowserTestBase {
 
     $this->drupalGet('<front>');
 
-    $this->assertSession()->pageTextContains('brb');
-    $this->assertSession()->pageTextContains('lmk');
+    $assertSession = $this->assertSession();
+    $assertSession->pageTextContains('brb');
+    $assertSession->pageTextContains('lmk');
   }
 
 }

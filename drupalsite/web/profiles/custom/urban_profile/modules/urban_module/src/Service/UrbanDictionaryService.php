@@ -31,7 +31,8 @@ class UrbanDictionaryService implements UrbanDictionaryServiceInterface {
    *
    * @param \GuzzleHttp\ClientInterface $httpClient
    *   Client for sending HTTP requests.
-   *
+   * @param \Drupal\Core\Logger\LoggerChannelFactoryInterface $loggerChannelFactory
+   *   Logger channel factory.
    */
   public function __construct(ClientInterface $httpClient, LoggerChannelFactoryInterface $loggerChannelFactory) {
     $this->httpClient = $httpClient;
@@ -49,9 +50,6 @@ class UrbanDictionaryService implements UrbanDictionaryServiceInterface {
       return NULL;
     }
     $json = json_decode($response->getBody());
-    if (empty($json)){
-      return new UrbanDefinition($response->getBody()->getContents(), $response->getBody()->getContents(), $response->getBody()->getContents());
-    }
     return new UrbanDefinition($json->term, $json->definition, $json->example);
   }
 
