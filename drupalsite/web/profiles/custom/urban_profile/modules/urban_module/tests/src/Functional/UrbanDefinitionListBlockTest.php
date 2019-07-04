@@ -21,14 +21,14 @@ class UrbanDefinitionListBlockTest extends BrowserTestBase {
     ]);
     $this->createNode([
       'type' => 'urban_definition',
-      'title' => 'lmk',
+      'title' => 'LMK',
     ]);
 
     $this->drupalGet('<front>');
 
     $assertSession = $this->assertSession();
     $assertSession->pageTextContains('brb');
-    $assertSession->pageTextContains('lmk');
+    $assertSession->pageTextContains('LMK');
   }
 
 }
